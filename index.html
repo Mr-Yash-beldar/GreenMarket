@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenMarket</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#" class="logo">GREENMARKET</a>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">FRUITS</a></li>
+          <li><a href="#">SALADS</a></li>
+          <li><a href="#">JUICES</a></li>
+          <li><a href="#">MEATS</a></li>
+          <li><a href="#">CONTACT US</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-btn">Search</button>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+    <script>    
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        const searchContainer = document.querySelector(".search-container");
+        navLinks.classList.toggle("active");
+        searchContainer.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
