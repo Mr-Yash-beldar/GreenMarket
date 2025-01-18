@@ -9,6 +9,7 @@
     font-family: Arial, sans-serif;
   }
   
+  /* navbar */
   .navbar {
       position: fixed;
       top: 0;
@@ -162,3 +163,12 @@
       }
   }
  
+  /*image */
+  #imageValue{
+    /* margin-top: 0%; */
+    background-image: url(./Image/Fruitsveggiesbanner2_79468387.jpg );
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 0%;
+}
+
