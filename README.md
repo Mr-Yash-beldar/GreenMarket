@@ -13,7 +13,7 @@ Green Market is a vegetable selling platform. This project is a frontend applica
 ## How to Run
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/green-market.git
+    git clone https://github.com/Mr-Yash-beldar/GreenMarket.git
     ```
 2. Navigate to the project directory:
     ```bash
