@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +33,7 @@ body {
 }
 
 .logo {
+  font-family: "righteous", cursive;
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
@@ -46,12 +49,14 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #333;
+  font-family: "Kalam", cursive;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #008000;
+  
+  color: #edb53b;
 }
 
 .nav-right {
@@ -213,12 +218,14 @@ about-section {
 
 .subtitle {
   color: #8cc63f;
+  font-family: "Kalam", cursive;
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
 .title {
+  font-family: "Righteous", cursive;
   color: #333333;
   font-size: 48px;
   font-weight: 700;
@@ -292,17 +299,18 @@ about-section {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Kalam", cursive;
   font-style: italic;
 }
 
+
 .services h2 {
+  font-family: "Righteous", cursive;
   color: #333333;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 50px;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
 }
 
 .services-grid {
@@ -461,12 +469,14 @@ about-section {
 }
 
 .section-subtitle {
+  font-family: "Kalam", cursive;
   color: #6cc24a;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .section-title {
+  font-family: "Righteous", cursive;
   font-size: 48px;
   margin-bottom: 40px;
 }
@@ -551,11 +561,14 @@ about-section {
 
 .subtitle {
   color: #7ac751;
-  font-size: 24px;
+  font-style: bold;
+  font-family: "Kalam", cursive;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 .title {
+  font-family: "Righteous", cursive;
   font-size: 48px;
   margin-bottom: 40px;
 }
@@ -624,5 +637,106 @@ about-section {
 
   .image-wrapper {
     height: 200px;
+  }
+}
+
+/* footer section */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+.footer {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 60px 0 30px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-family: "Kalam", cursive;
+  color: #7ac751;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #a0a0a0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  transition: scale(1.1);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid #404040;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  background-color: #404040;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-media {
+    gap: 15px;
+  }
+
+  .social-icon img {
+    width: 35px;
+    height: 35px;
   }
 }
